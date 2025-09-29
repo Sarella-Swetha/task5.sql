@@ -43,7 +43,7 @@ SELECT o.order_id, u.username, o.total_amount
 FROM users u
 RIGHT JOIN orders o ON u.user_id = o.user_id;
 
-🔹 4. FULL OUTER JOIN (Workaround in MySQL)
+🔹 4. FULL OUTER JOIN
 SELECT u.user_id, u.username, o.order_id, o.total_amount
 FROM users u
 LEFT JOIN orders o ON u.user_id = o.user_id
